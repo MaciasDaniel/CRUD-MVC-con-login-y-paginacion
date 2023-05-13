@@ -94,7 +94,7 @@ public class EmpleadoController {
             }
         }else{
             flash.addAttribute("error", "El ID del empleado no puede ser cero");
-            return "redirect:/lisatr";
+            return "redirect:/listar";
         }
         modelo.put("empleado", empleado);
         modelo.put("titulo", "Edición de empleados");
